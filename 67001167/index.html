@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mundial 2026 — FIFA World Cup</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:wght@300;400;600;700&family=Barlow:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+
+<nav>
+  <div class="nav-logo">Mundial 2026</div>
+  <div class="nav-links">
+    <a href="#datos">Datos</a>
+    <a href="#sedes">Sedes</a>
+    <a href="#grupos">Grupos</a>
+    <a href="#calendario">Calendario</a>
+    <a href="#favoritos">Favoritos</a>
+  </div>
+</nav>
+
+banner grande inicial de la página
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-year">2026</div>
+  <h1 class="hero-title">FIFA <span>World Cup</span></h1>
+  <p class="hero-subtitle">Copa del Mundo · Norteamérica · 11 Jun — 19 Jul</p>
+  <div class="hero-badges">
+    <div class="badge">📅 39 días</div>
+    <div class="badge">⚽ 104 partidos</div>
+    <div class="badge">🌍 48 selecciones</div>
+    <div class="badge">🏟️ 16 estadios</div>
+  </div>
+  <div class="hero-flags">
+    <div class="flag-item">
+      <div class="flag-emoji">🇺🇸</div>
+      <div class="flag-name">EE.UU.</div>
+    </div>
+    <div class="flag-item">
+      <div class="flag-emoji">🇲🇽</div>
+      <div class="flag-name">México</div>
+    </div>
+    <div class="flag-item">
+      <div class="flag-emoji">🇨🇦</div>
+      <div class="flag-name">Canadá</div>
+    </div>
+  </div>
+  <!--mensaje para que baje flotante -->
+  <div class="scroll-down">Descubre más</div>
+</section>
+
+<!-- barra animada de estadísticas-->
+<div class="stats-bar">
+  <div class="stats-scroll">
+    <div class="stat-item"><div class="stat-num">48</div><div class="stat-label">Selecciones</div></div>
+    <div class="stat-item"><div class="stat-num">104</div><div class="stat-label">Partidos</div></div>
+    <div class="stat-item"><div class="stat-num">16</div><div class="stat-label">Sedes</div></div>
+    <div class="stat-item"><div class="stat-num">12</div><div class="stat-label">Grupos</div></div>
+    <div class="stat-item"><div class="stat-num">3</div><div class="stat-label">Países anfitriones</div></div>
+    <div class="stat-item"><div class="stat-num">39</div><div class="stat-label">Días de torneo</div></div>
+    <!-- duplicado para loop continuo scroll infinito sin que se note el corte-->
+    <div class="stat-item"><div class="stat-num">48</div><div class="stat-label">Selecciones</div></div>
+    <div class="stat-item"><div class="stat-num">104</div><div class="stat-label">Partidos</div></div>
+    <div class="stat-item"><div class="stat-num">16</div><div class="stat-label">Sedes</div></div>
+    <div class="stat-item"><div class="stat-num">12</div><div class="stat-label">Grupos</div></div>
+    <div class="stat-item"><div class="stat-num">3</div><div class="stat-label">Países anfitriones</div></div>
+    <div class="stat-item"><div class="stat-num">39</div><div class="stat-label">Días de torneo</div></div>
+  </div>
+</div>
+
+<div class="countdown-section">
+  <div class="countdown-label"> Cuenta regresiva al partido inaugural — 11 de Junio 2026</div>
+  <div class="countdown-units">
+    <div class="countdown-unit">
+      <span class="countdown-num" id="days">—</span>
+      <div class="countdown-unit-label">Días</div>
+    </div>
+    <div class="countdown-unit">
+      <span class="countdown-num" id="hours">—</span>
+      <div class="countdown-unit-label">Horas</div>
+    </div>
+    <div class="countdown-unit">
+      <span class="countdown-num" id="minutes">—</span>
+      <div class="countdown-unit-label">Minutos</div>
+    </div>
+    <div class="countdown-unit">
+      <span class="countdown-num" id="seconds">—</span>
+      <div class="countdown-unit-label">Segundos</div>
+    </div>
+  </div>
+</div>
+INFO
+<section id="datos">
+  <div class="container">
+    <div class="section-label">Historia</div>
+    <div class="section-title">Datos del Torneo</div>
+    <div class="section-sep"></div>
+    <div class="info-grid">
+      <div class="info-card">
+        <div class="info-icon"></div>
+        <div class="info-card-title">Edición</div>
+        <div class="info-card-value">23ª Copa</div>
+        <div class="info-card-desc">La vigesimotercera edición de la Copa Mundial FIFA, primera vez en la historia del torneo con 48 equipos participantes.</div>
+      </div>
+      <div class="info-card">
+        <div class="info-icon"></div>
+        <div class="info-card-title">Partido inaugural</div>
+        <div class="info-card-value">México vs Sudáfrica</div>
+        <div class="info-card-desc">Se jugará el 11 de junio en el legendario Estadio Azteca de Ciudad de México.</div>
+      </div>
+      <div class="info-card">
+        <div class="info-icon"></div>
+        <div class="info-card-title">La Gran Final</div>
+        <div class="info-card-value">19 de Julio</div>
+        <div class="info-card-desc">La final se disputará en el MetLife Stadium de East Rutherford, Nueva Jersey, EE.UU.</div>
+      </div>
+      <div class="info-card">
+        <div class="info-icon"></div>
+        <div class="info-card-title">Formato</div>
+        <div class="info-card-value">12 Grupos</div>
+        <div class="info-card-desc">12 grupos de 4 equipos. Clasifican los 2 primeros de cada grupo y los 8 mejores terceros a los 16avos de final.</div>
+      </div>
+      <div class="info-card">
+        <div class="info-icon"></div>
+        <div class="info-card-title">Anfitriones</div>
+        <div class="info-card-value">3 Naciones</div>
+        <div class="info-card-desc">Primera vez en la historia que 3 países co-organizan el torneo. México será el primero en albergar 3 Mundiales.</div>
+      </div>
+      <div class="info-card">
+        <div class="info-icon"></div>
+        <div class="info-card-title">Total de partidos</div>
+        <div class="info-card-value">104 Juegos</div>
+        <div class="info-card-desc">40 partidos más que el torneo anterior. El mayor número de encuentros en la historia de la Copa del Mundo.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+ SEDES 
+<section id="sedes" class="sedes-section">
+  <div class="container">
+    <div class="section-label">Ciudades y Estadios</div>
+    <div class="section-title">Las 16 Sedes</div>
+    <div class="section-sep"></div>
+    <p class="sedes-intro">Dieciséis estadios en tres países acogerán los 104 partidos de la Copa del Mundo. Estados Unidos tendrá 11 sedes, México 3 y Canadá 2.</p>
+    <div class="countries-tabs">
+      <button class="tab-btn active" onclick="showTab('usa', this)">🇺🇸 Estados Unidos</button>
+      <button class="tab-btn" onclick="showTab('mex', this)">🇲🇽 México</button>
+      <button class="tab-btn" onclick="showTab('can', this)">🇨🇦 Canadá</button>
+    </div>
+    <div id="usa" class="sedes-panel active">
+      <div class="sede-card"><div class="sede-city">Nueva York / NJ</div><div class="sede-stadium">MetLife Stadium</div><div class="sede-cap">82,500 cap · Final</div></div>
+      <div class="sede-card"><div class="sede-city">Los Ángeles</div><div class="sede-stadium">SoFi Stadium</div><div class="sede-cap">70,240 cap</div></div>
+      <div class="sede-card"><div class="sede-city">Dallas</div><div class="sede-stadium">AT&T Stadium</div><div class="sede-cap">80,000 cap</div></div>
+      <div class="sede-card"><div class="sede-city">San Francisco</div><div class="sede-stadium">Levi's Stadium</div><div class="sede-cap">68,500 cap</div></div>
+      <div class="sede-card"><div class="sede-city">Miami</div><div class="sede-stadium">Hard Rock Stadium</div><div class="sede-cap">65,000 cap</div></div>
+      <div class="sede-card"><div class="sede-city">Atlanta</div><div class="sede-stadium">Mercedes-Benz Stadium</div><div class="sede-cap">71,000 cap</div></div>
+      <div class="sede-card"><div class="sede-city">Seattle</div><div class="sede-stadium">Lumen Field</div><div class="sede-cap">69,000 cap</div></div>
+      <div class="sede-card"><div class="sede-city">Houston</div><div class="sede-stadium">NRG Stadium</div><div class="sede-cap">72,220 cap</div></div>
+      <div class="sede-card"><div class="sede-city">Kansas City</div><div class="sede-stadium">Arrowhead Stadium</div><div class="sede-cap">76,416 cap</div></div>
+      <div class="sede-card"><div class="sede-city">Boston</div><div class="sede-stadium">Gillette Stadium</div><div class="sede-cap">65,878 cap</div></div>
+      <div class="sede-card"><div class="sede-city">Philadelphia</div><div class="sede-stadium">Lincoln Financial Field</div><div class="sede-cap">69,796 cap</div></div>
+    </div>
+    <div id="mex" class="sedes-panel">
+      <div class="sede-card"><div class="sede-city">Ciudad de México</div><div class="sede-stadium">Estadio Azteca</div><div class="sede-cap">87,000 cap · Inauguración</div></div>
+      <div class="sede-card"><div class="sede-city">Guadalajara</div><div class="sede-stadium">Estadio Akron</div><div class="sede-cap">49,850 cap</div></div>
+      <div class="sede-card"><div class="sede-city">Monterrey</div><div class="sede-stadium">Estadio BBVA</div><div class="sede-cap">53,460 cap</div></div>
+    </div>
+    <div id="can" class="sedes-panel">
+      <div class="sede-card"><div class="sede-city">Toronto</div><div class="sede-stadium">BMO Field</div><div class="sede-cap">45,000 cap</div></div>
+      <div class="sede-card"><div class="sede-city">Vancouver</div><div class="sede-stadium">BC Place</div><div class="sede-cap">54,500 cap</div></div>
+    </div>
+  </div>
+</section>
+
+GRUPOS
+<section id="grupos">
+  <div class="container">
+    <div class="section-label">Sorteo Diciembre 2025</div>
+    <div class="section-title">Los 12 Grupos</div>
+    <div class="section-sep"></div>
+    <div class="grupos-grid">
+
+      <div class="grupo-card">
+        <div class="grupo-header"><div class="grupo-letter">A</div><div class="grupo-label">Grupo A</div></div>
+        <div class="grupo-teams">
+          <div class="team-row"><span class="team-flag">🇲🇽</span><span class="team-name">México</span><span class="team-host">Sede</span></div>
+          <div class="team-row"><span class="team-flag">🇿🇦</span><span class="team-name">Sudáfrica</span></div>
+          <div class="team-row"><span class="team-flag">🇰🇷</span><span class="team-name">Corea del Sur</span></div>
+          <div class="team-row"><span class="team-flag">🏳️</span><span class="team-name">Por definir</span></div>
+        </div>
+      </div>
+
+      <div class="grupo-card">
+        <div class="grupo-header"><div class="grupo-letter">B</div><div class="grupo-label">Grupo B</div></div>
+        <div class="grupo-teams">
+          <div class="team-row"><span class="team-flag">🇺🇸</span><span class="team-name">Estados Unidos</span><span class="team-host">Sede</span></div>
+          <div class="team-row"><span class="team-flag">🇵🇦</span><span class="team-name">Panamá</span></div>
+          <div class="team-row"><span class="team-flag">🇩🇿</span><span class="team-name">Argelia</span></div>
+          <div class="team-row"><span class="team-flag">🏳️</span><span class="team-name">Por definir</span></div>
+        </div>
+      </div>
+
+      <div class="grupo-card">
+        <div class="grupo-header"><div class="grupo-letter">C</div><div class="grupo-label">Grupo C</div></div>
+        <div class="grupo-teams">
+          <div class="team-row"><span class="team-flag">🇨🇦</span><span class="team-name">Canadá</span><span class="team-host">Sede</span></div>
+          <div class="team-row"><span class="team-flag">🇶🇦</span><span class="team-name">Qatar</span></div>
+          <div class="team-row"><span class="team-flag">🇨🇭</span><span class="team-name">Suiza</span></div>
+          <div class="team-row"><span class="team-flag">🏳️</span><span class="team-name">Por definir</span></div>
+        </div>
+      </div>
+
+      <div class="grupo-card">
+        <div class="grupo-header"><div class="grupo-letter">D</div><div class="grupo-label">Grupo D</div></div>
+        <div class="grupo-teams">
+          <div class="team-row"><span class="team-flag">🇧🇷</span><span class="team-name">Brasil</span></div>
+          <div class="team-row"><span class="team-flag">🇲🇦</span><span class="team-name">Marruecos</span></div>
+          <div class="team-row"><span class="team-flag">🇭🇹</span><span class="team-name">Haití</span></div>
+          <div class="team-row"><span class="team-flag">🇬🇧</span><span class="team-name">Escocia</span></div>
+        </div>
+      </div>
+
+      <div class="grupo-card">
+        <div class="grupo-header"><div class="grupo-letter">E</div><div class="grupo-label">Grupo E</div></div>
+        <div class="grupo-teams">
+          <div class="team-row"><span class="team-flag">🇩🇪</span><span class="team-name">Alemania</span></div>
+          <div class="team-row"><span class="team-flag">🇯🇵</span><span class="team-name">Japón</span></div>
+          <div class="team-row"><span class="team-flag">🇨🇱</span><span class="team-name">Chile</span></div>
+          <div class="team-row"><span class="team-flag">🏳️</span><span class="team-name">Por definir</span></div>
+        </div>
+      </div>
+
+      <div class="grupo-card">
+        <div class="grupo-header"><div class="grupo-letter">F</div><div class="grupo-label">Grupo F</div></div>
+        <div class="grupo-teams">
+          <div class="team-row"><span class="team-flag">🇵🇹</span><span class="team-name">Portugal</span></div>
+          <div class="team-row"><span class="team-flag">🇺🇾</span><span class="team-name">Uruguay</span></div>
+          <div class="team-row"><span class="team-flag">🇳🇬</span><span class="team-name">Nigeria</span></div>
+          <div class="team-row"><span class="team-flag">🏳️</span><span class="team-name">Por definir</span></div>
+        </div>
+      </div>
+
+      <div class="grupo-card">
+        <div class="grupo-header"><div class="grupo-letter">G</div><div class="grupo-label">Grupo G</div></div>
+        <div class="grupo-teams">
+          <div class="team-row"><span class="team-flag">󠁧󠁢󠁧󠁢󠁧󠁢🇬🇧</span><span class="team-name">Inglaterra</span></div>
+          <div class="team-row"><span class="team-flag">🇦🇺</span><span class="team-name">Australia</span></div>
+          <div class="team-row"><span class="team-flag">🇨🇴</span><span class="team-name">Colombia</span></div>
+          <div class="team-row"><span class="team-flag">🏳️</span><span class="team-name">Por definir</span></div>
+        </div>
+      </div>
+
+      <div class="grupo-card">
+        <div class="grupo-header"><div class="grupo-letter">H</div><div class="grupo-label">Grupo H</div></div>
+        <div class="grupo-teams">
+          <div class="team-row"><span class="team-flag">🇪🇸</span><span class="team-name">España</span></div>
+          <div class="team-row"><span class="team-flag">🇸🇦</span><span class="team-name">Arabia Saudita</span></div>
+          <div class="team-row"><span class="team-flag">🇸🇳</span><span class="team-name">Senegal</span></div>
+          <div class="team-row"><span class="team-flag">🏳️</span><span class="team-name">Por definir</span></div>
+        </div>
+      </div>
+
+      <div class="grupo-card">
+        <div class="grupo-header"><div class="grupo-letter">I</div><div class="grupo-label">Grupo I</div></div>
+        <div class="grupo-teams">
+          <div class="team-row"><span class="team-flag">🇫🇷</span><span class="team-name">Francia</span></div>
+          <div class="team-row"><span class="team-flag">🇳🇴</span><span class="team-name">Noruega</span></div>
+          <div class="team-row"><span class="team-flag">🇸🇳</span><span class="team-name">Senegal</span></div>
+          <div class="team-row"><span class="team-flag">🏳️</span><span class="team-name">Por definir</span></div>
+        </div>
+      </div>
+
+      <div class="grupo-card">
+        <div class="grupo-header"><div class="grupo-letter">J</div><div class="grupo-label">Grupo J</div></div>
+        <div class="grupo-teams">
+          <div class="team-row"><span class="team-flag">🇦🇷</span><span class="team-name">Argentina</span></div>
+          <div class="team-row"><span class="team-flag">🇩🇿</span><span class="team-name">Argelia</span></div>
+          <div class="team-row"><span class="team-flag">🇦🇹</span><span class="team-name">Austria</span></div>
+          <div class="team-row"><span class="team-flag">🇯🇴</span><span class="team-name">Jordania</span></div>
+        </div>
+      </div>
+
+      <div class="grupo-card">
+        <div class="grupo-header"><div class="grupo-letter">K</div><div class="grupo-label">Grupo K</div></div>
+        <div class="grupo-teams">
+          <div class="team-row"><span class="team-flag">🇧🇪</span><span class="team-name">Bélgica</span></div>
+          <div class="team-row"><span class="team-flag">🇪🇨</span><span class="team-name">Ecuador</span></div>
+          <div class="team-row"><span class="team-flag">🏳️</span><span class="team-name">Por definir</span></div>
+          <div class="team-row"><span class="team-flag">🏳️</span><span class="team-name">Por definir</span></div>
+        </div>
+      </div>
+
+      <div class="grupo-card">
+        <div class="grupo-header"><div class="grupo-letter">L</div><div class="grupo-label">Grupo L</div></div>
+        <div class="grupo-teams">
+          <div class="team-row"><span class="team-flag">🇳🇱</span><span class="team-name">Países Bajos</span></div>
+          <div class="team-row"><span class="team-flag">🇷🇸</span><span class="team-name">Serbia</span></div>
+          <div class="team-row"><span class="team-flag">🏳️</span><span class="team-name">Por definir</span></div>
+          <div class="team-row"><span class="team-flag">🏳️</span><span class="team-name">Por definir</span></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section id="calendario" class="calendar-section">
+  <div class="container">
+    <div class="section-label">Fechas Clave</div>
+    <div class="section-title">Calendario 2026</div>
+    <div class="section-sep"></div>
+    <div class="phases-grid">
+      <div class="phase-card">
+        <div class="phase-date">11 Jun - 26 Jun 2026</div>
+        <div class="phase-name">Fase de Grupos</div>
+        <div class="phase-info">48 equipos · 12 grupos · 48 partidos</div>
+      </div>
+      <div class="phase-card">
+        <div class="phase-date">28 Jun - 3 Jul 2026</div>
+        <div class="phase-name">16avos de Final</div>
+        <div class="phase-info">32 equipos · 16 partidos</div>
+      </div>
+      <div class="phase-card">
+        <div class="phase-date">4 Jul - 7 Jul 2026</div>
+        <div class="phase-name">Octavos de Final</div>
+        <div class="phase-info">16 equipos · 8 partidos</div>
+      </div>
+      <div class="phase-card">
+        <div class="phase-date">10 Jul - 11 Jul 2026</div>
+        <div class="phase-name">Cuartos de Final</div>
+        <div class="phase-info">8 equipos · 4 partidos</div>
+      </div>
+      <div class="phase-card">
+        <div class="phase-date">14 Jul - 15 Jul 2026</div>
+        <div class="phase-name">Semifinales</div>
+        <div class="phase-info">4 equipos · 2 partidos</div>
+      </div>
+      <div class="phase-card phase-final">
+        <div class="phase-date"> 19 Jul 2026</div>
+        <div class="phase-name">Gran Final</div>
+        <div class="phase-info">MetLife Stadium · Nueva Jersey</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="favoritos" class="favorites-section">
+  <div class="container">
+    <div class="section-label">Ranking FIFA</div>
+    <div class="section-title">Grandes Favoritos</div>
+    <div class="section-sep"></div>
+    <div class="favs-grid">
+      <div class="fav-card"><div class="fav-flag">🇨🇴</div><div class="fav-country">Colombia</div><div class="fav-odds">La mejor seleccion del mundo</div><div class="fav-rank">#1 FIFA · Campeona de todo</div></div>
+      <div class="fav-card"><div class="fav-flag">🇪🇸</div><div class="fav-country">España</div><div class="fav-odds">Gran Favorita</div><div class="fav-rank">#2 FIFA · Campeona Europa</div></div>
+      <div class="fav-card"><div class="fav-flag">🇦🇷</div><div class="fav-country">Argentina</div><div class="fav-odds">Campeona vigente</div><div class="fav-rank">#3 FIFA · Qatar 2022</div></div>
+      <div class="fav-card"><div class="fav-flag">🇫🇷</div><div class="fav-country">Francia</div><div class="fav-odds">Siempre amenaza</div><div class="fav-rank">#4 FIFA · Mbappé & Co.</div></div>
+      <div class="fav-card"><div class="fav-flag">󠁧󠁢󠁥󠁧󠁢󠁥🇬🇧 </div><div class="fav-country">Inglaterra</div><div class="fav-odds">Ilusión perpetua</div><div class="fav-rank">#5 FIFA</div></div>
+      <div class="fav-card"><div class="fav-flag">🇧🇷</div><div class="fav-country">Brasil</div><div class="fav-odds">5 copas · Siempre top</div><div class="fav-rank">Generación nueva</div></div>
+      <div class="fav-card"><div class="fav-flag">🇩🇪</div><div class="fav-country">Alemania</div><div class="fav-odds">Resurge en Europa</div><div class="fav-rank">4 veces campeona</div></div>
+      <div class="fav-card"><div class="fav-flag">🇵🇹</div><div class="fav-country">Portugal</div><div class="fav-odds">Con Cristiano</div><div class="fav-rank">9ª participación</div></div>
+      <div class="fav-card"><div class="fav-flag">🇺🇸</div><div class="fav-country">Estados Unidos</div><div class="fav-odds">Local + generación</div><div class="fav-rank">Efecto sede 2026</div></div>
+    </div>
+  </div>
+</section>
+
+
+<footer>
+  <div class="footer-logo">Mundial 2026</div>
+  <div class="footer-sub">FIFA World Cup · Canada · USA · Mexico</div>
+  <div class="footer-links">
+    <a href="#datos">Datos</a>
+    <a href="#sedes">Sedes</a>
+    <a href="#grupos">Grupos</a>
+    <a href="#calendario">Calendario</a>
+    <a href="#favoritos">Favoritos</a>
+  </div>
+  <div class="footer-copy">Página informativa · Datos basados en fuentes oficiales FIFA · 2026</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+formulario de ingreso 
+<section class="login-section">
+  <div class="login-box">
+    <h2>Iniciar Sesión</h2>
+
+    <form id="loginForm">
+      <input type="text" id="usuario" placeholder="Usuario" required>
+      <input type="password" id="password" placeholder="Contraseña" required>
+      <button type="submit">Ingresar</button>
+    </form>
+
+    <p id="loginMessage"></p>
+  </div>
+</section>
